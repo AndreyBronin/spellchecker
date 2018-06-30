@@ -16,3 +16,12 @@ target_link_libraries(${PROJECT_NAME} ${GTEST_BOTH_LIBRARIES} fuzzysearch)
 
 
 add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME} --gtest_output=xml)
+
+# Setup coverage
+include(../CodeCoverage.cmake)
+#set(COVERAGE_EXCLUDES 'tests/*')
+APPEND_COVERAGE_COMPILER_FLAGS() 
+SETUP_TARGET_FOR_COVERAGE(
+     NAME ctest_coverage
+     EXECUTABLE ctest -j ${PROCESSOR_COUNT}
+     DEPENDENCIES test_spellchecker)
