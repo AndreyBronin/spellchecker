@@ -1,7 +1,7 @@
 ## Spellchecker
 
 [![Build Status](https://travis-ci.org/AndreyBronin/spellchecker.svg?branch=master)](https://travis-ci.org/AndreyBronin/spellchecker)
-[![Coverage Status](https://coveralls.io/repos/github/AndreyBronin/spellchecker/badge.svg?branch=master)](https://coveralls.io/github/AndreyBronin/spellchecker?branch=master)
+[![codecov](https://codecov.io/gh/AndreyBronin/spellchecker/branch/master/graph/badge.svg)](https://codecov.io/gh/AndreyBronin/spellchecker)
 
 Simple spellchecker uses fuzzy search algorithm based on Levenshtein distance between two strings.
 
