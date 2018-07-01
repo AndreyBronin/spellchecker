@@ -10,6 +10,7 @@ configuration:
   - Debug
 
 install:
+    - nuget install googletest
     - git submodule update --init --recursive
 
 before_build:
